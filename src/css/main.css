@@ -14,18 +14,33 @@
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,42,71,1) 33%, rgba(88,97,116,1) 66%, rgba(159,177,181,1) 100%);
     justify-content: center;
-
+    background-image: url(../assets/images/sdstreet-night.jpg);
 
 }
+
+.Wrapper:after {
+    content:"";
+	position:absolute;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background:rgba(0,0,0,0.5);
+    height:100%;
+    z-index: 2;
+    
+}
+
 
 
 .card-bg {
     position: relative;
     padding: 3rem 3rem 4rem;
-    background-color: #FFF;
+    /**background-color: #FFF;**/
     border: 5px;
     border-radius: 15px;
-
+    z-index: 10;
+    background-color:rgba(20, 20, 20, 0.85);
 }
 
 .card-subtitle {
